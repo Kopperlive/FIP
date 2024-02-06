@@ -2,7 +2,7 @@ import 'models/edit_profile_model.dart';
 import 'package:flutter/material.dart';
 import 'package:hojiakbar_s_app/core/app_export.dart';
 import 'package:hojiakbar_s_app/core/utils/validation_functions.dart';
-import 'package:hojiakbar_s_app/presentation/root_menu_page/root_menu_page.dart';
+import 'package:hojiakbar_s_app/presentation/root_menu_container_page/root_menu_container_page.dart';
 import 'package:hojiakbar_s_app/widgets/custom_bottom_bar.dart';
 import 'package:hojiakbar_s_app/widgets/custom_floating_text_field.dart';
 import 'package:hojiakbar_s_app/widgets/custom_icon_button.dart';
@@ -42,7 +42,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                     child: Padding(
                         padding: EdgeInsets.only(bottom: 5.v),
                         child: Column(children: [
-                          _buildUserProfileRow(context),
+                          _buildRow(context),
                           SizedBox(height: 31.v),
                           CustomImageView(
                               imagePath: ImageConstant.imgArrowLeft,
@@ -93,10 +93,10 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                                         controller: emailController,
                                         labelText: "lbl_email".tr,
                                         labelStyle: CustomTextStyles
-                                            .bodySmallK2DBlack90001_1,
+                                            .bodySmallBlack90001_1,
                                         hintText: "lbl_email".tr,
                                         hintStyle: CustomTextStyles
-                                            .bodySmallK2DBlack90001_1,
+                                            .bodySmallBlack90001_1,
                                         textInputType:
                                             TextInputType.emailAddress,
                                         validator: (value) {
@@ -122,10 +122,10 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                                         controller: phoneNumberController,
                                         labelText: "lbl_phone_number".tr,
                                         labelStyle: CustomTextStyles
-                                            .bodySmallK2DBlack90001_1,
+                                            .bodySmallBlack90001_1,
                                         hintText: "lbl_phone_number".tr,
                                         hintStyle: CustomTextStyles
-                                            .bodySmallK2DBlack90001_1,
+                                            .bodySmallBlack90001_1,
                                         textInputType: TextInputType.phone,
                                         validator: (value) {
                                           if (!isValidPhone(value)) {
@@ -136,13 +136,13 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                                         });
                                   })),
                           SizedBox(height: 13.v),
-                          _buildUserProfileRowTwo(context)
+                          _buildGenrevalue(context)
                         ])))),
             bottomNavigationBar: _buildBottomBar(context)));
   }
 
   /// Section Widget
-  Widget _buildUserProfileRow(BuildContext context) {
+  Widget _buildRow(BuildContext context) {
     return Container(
         width: double.maxFinite,
         padding: EdgeInsets.symmetric(horizontal: 19.h, vertical: 14.v),
@@ -174,7 +174,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
   }
 
   /// Section Widget
-  Widget _buildUserProfileRowTwo(BuildContext context) {
+  Widget _buildGenrevalue(BuildContext context) {
     return Padding(
         padding: EdgeInsets.symmetric(horizontal: 25.h),
         child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -190,10 +190,10 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text("lbl_country".tr,
-                              style: CustomTextStyles.bodySmallK2DBlack90001),
+                              style: CustomTextStyles.bodySmallBlack90001),
                           SizedBox(height: 4.v),
                           Text("lbl_kyrgyzstan".tr,
-                              style: CustomTextStyles.bodySmallK2DBlack90001_1)
+                              style: CustomTextStyles.bodySmallBlack90001_1)
                         ]),
                     CustomImageView(
                         imagePath: ImageConstant.imgVectorGray50001,
@@ -211,9 +211,9 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                         width: 163.h,
                         controller: genrevalueController,
                         labelText: "lbl_genre".tr,
-                        labelStyle: CustomTextStyles.bodySmallK2DBlack90001_1,
+                        labelStyle: CustomTextStyles.bodySmallBlack90001_1,
                         hintText: "lbl_genre".tr,
-                        hintStyle: CustomTextStyles.bodySmallK2DBlack90001_1,
+                        hintStyle: CustomTextStyles.bodySmallBlack90001_1,
                         textInputAction: TextInputAction.done);
                   }))
         ]));
@@ -230,7 +230,7 @@ class EditProfileScreenState extends State<EditProfileScreen> {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Orange20020x21:
-        return AppRoutes.rootMenuPage;
+        return AppRoutes.rootMenuContainerPage;
       case BottomBarEnum.Vector:
         return "/";
       case BottomBarEnum.Orange200:
@@ -246,8 +246,8 @@ class EditProfileScreenState extends State<EditProfileScreen> {
     String currentRoute,
   ) {
     switch (currentRoute) {
-      case AppRoutes.rootMenuPage:
-        return RootMenuPage.builder(context);
+      case AppRoutes.rootMenuContainerPage:
+        return RootMenuContainerPage.builder(context);
       default:
         return DefaultWidget();
     }

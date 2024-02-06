@@ -51,10 +51,10 @@ class CongratulationsWindowScreenState
                 ]))));
   }
 
-  /// Navigates to the rootMenuContainerScreen when the action is triggered.
+  /// Navigates to the rootMenuContainer1Screen when the action is triggered.
   onTapBtnTuda(BuildContext context) {
     NavigatorService.pushNamed(
-      AppRoutes.rootMenuContainerScreen,
+      AppRoutes.rootMenuContainer1Screen,
     );
   }
 }

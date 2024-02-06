@@ -8,11 +8,10 @@ final Map<String, String> enUs = {
       "Don't have an account? Read How to create an account",
   "msg_don_t_have_an_account2": "Don't have an account? Read ",
   "msg_how_to_create_an": "How to create an account",
-  "msg_welcome_to_omnicomm": "Welcome \nto OMNICOMM!",
 
-  // root menu Screen
+  // root menu - Container Screen
   "lbl_learn_more": "Learn more ",
-  "msg_how_to_use_omnicomm": "How to use Omnicomm?",
+  "msg": "Турдиева Дильназа Дильмуратовна",
   "msg_learn_more_about": "Learn more about financial literacy",
   "msg_please_confirm": "Please, confirm reports",
 
@@ -23,6 +22,10 @@ final Map<String, String> enUs = {
   // Congratulations window Screen
   "lbl_back_to_home": "Back to home", "lbl_successful": "Successful!",
 
+  // How to use omnicomm Screen
+  "lbl_watch_the_video": "Watch the video",
+  "msg_now_you_know_how": "Now you know how to use our application correctly!",
+
   // notifications/chat Screen
   "lbl_13_01": "13:01",
   "lbl_18_31": "18.31",
@@ -30,13 +33,13 @@ final Map<String, String> enUs = {
   "lbl_accountant": "Accountant",
   "lbl_chief": "Chief ",
   "lbl_manager": "Manager",
-  "lbl_messages": "Messages",
   "lbl_okay": "Okay",
   "lbl_thanks": "Thanks",
   "lbl_yesterday": " Yesterday",
-  "msg_chief_accountant": "Chief Accountant",
-  "msg_please_confirm2": "Please, confirm your reports!",
   "msg_you_are_welcome": "You are welcome!",
+
+  // notifications/chat One Screen
+  "lbl_today": "Today",
 
   // settings Screen
   "lbl_about_us": "About us",
@@ -45,7 +48,6 @@ final Map<String, String> enUs = {
   "lbl_edit_profile": "Edit profile",
   "lbl_more": "More",
   "lbl_privacy_policy": "Privacy policy",
-  "lbl_settings": "Settings",
   "msg_account_settings": "Account Settings",
   "msg_push_notifications": "Push notifications",
 
@@ -92,13 +94,40 @@ final Map<String, String> enUs = {
   "msg_sed_ut_perspiciatis":
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.\n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
 
+  // оверлей Screen
+  "lbl_history": "History", "lbl_my_profile": "My profile\r",
+  "lbl_your_reports": "Your reports\r",
+
+  // оверлей фор акк Screen
+  "lbl_dark_mode2": "Dark Mode",
+  "lbl_full_name": "Full name",
+  "lbl_help_center": "Help center",
+  "lbl_log_out": "Log out",
+  "lbl_my_profile2": "My profile",
+  "lbl_name_gmail_com": "name.gmail.com",
+  "msg_guide_tutorials": "Guide & Tutorials ",
+
   // Common String
+  "lbl_16_04": "16.04",
+  "lbl_18_312": "18:31",
   "lbl_email": "Email",
   "lbl_file_name_pdf": "file name.pdf",
+  "lbl_inactive": "Inactive",
   "lbl_language": "Language",
+  "lbl_messages": "Messages",
+  "lbl_settings": "Settings",
   "lbl_theme": "Theme",
+  "msg_chief_accountant": "Chief Accountant",
+  "msg_hello_guys_we_have":
+      "Hello guys, we have discussed about post-corona vacation plan and our decision is to go to Bali. We will have a very big party after this corona ends! These are some images about our destination",
+  "msg_how_to_use_omnicomm": "How to use Omnicomm?",
+  "msg_please_confirm2": "Please, confirm your reports!",
+  "msg_that_s_very_nice":
+      "That’s very nice place! you guys made a very good decision. Can’t wait to go on vacation!",
   "msg_turdieva_d_auca_kg": "turdieva_d@auca.kg",
   "msg_turdieva_dilnaza": "Turdieva Dilnaza Dilmuratovna",
+  "msg_welcome_to_omnicomm": "Welcome \nto OMNICOMM!",
+  "msg_write_a_message": "Write a message...",
 
 // Network Error String
   "msg_network_err": "Network Error",

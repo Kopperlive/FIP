@@ -33,6 +33,10 @@ flutter:
           weight: 300
         - asset: assets/fonts/K2DSemiBold.ttf
           weight: 600
+        - asset: assets/fonts/K2DLight.ttf
+          weight: 300
+        - asset: assets/fonts/K2DMedium.ttf
+          weight: 500
     - family: Rubik
       fonts: 
         - asset: assets/fonts/RubikRegular.ttf

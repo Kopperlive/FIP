@@ -53,7 +53,7 @@ class AppNavigationScreenState extends State<AppNavigationScreen> {
                           context,
                           screenTitle: "root menu - Container".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
-                              AppRoutes.rootMenuContainerScreen),
+                              AppRoutes.rootMenuContainer1Screen),
                         ),
                         _buildScreenTitle(
                           context,
@@ -69,9 +69,27 @@ class AppNavigationScreenState extends State<AppNavigationScreen> {
                         ),
                         _buildScreenTitle(
                           context,
+                          screenTitle: "How to use omnicomm".tr,
+                          onTapScreenTitle: () => onTapScreenTitle(
+                              AppRoutes.howToUseOmnicommScreen),
+                        ),
+                        _buildScreenTitle(
+                          context,
                           screenTitle: "notifications/chat".tr,
                           onTapScreenTitle: () => onTapScreenTitle(
                               AppRoutes.notificationsChatScreen),
+                        ),
+                        _buildScreenTitle(
+                          context,
+                          screenTitle: "notifications/chat One".tr,
+                          onTapScreenTitle: () => onTapScreenTitle(
+                              AppRoutes.notificationsChatOneScreen),
+                        ),
+                        _buildScreenTitle(
+                          context,
+                          screenTitle: "notifications/chat".tr,
+                          onTapScreenTitle: () => onTapScreenTitle(
+                              AppRoutes.notificationsChat1Screen),
                         ),
                         _buildScreenTitle(
                           context,
@@ -108,6 +126,18 @@ class AppNavigationScreenState extends State<AppNavigationScreen> {
                           screenTitle: "Privacy policy".tr,
                           onTapScreenTitle: () =>
                               onTapScreenTitle(AppRoutes.privacyPolicyScreen),
+                        ),
+                        _buildScreenTitle(
+                          context,
+                          screenTitle: "оверлей".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.k15Screen),
+                        ),
+                        _buildScreenTitle(
+                          context,
+                          screenTitle: "оверлей фор акк".tr,
+                          onTapScreenTitle: () =>
+                              onTapScreenTitle(AppRoutes.k16Screen),
                         ),
                       ],
                     ),

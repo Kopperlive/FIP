@@ -1,7 +1,7 @@
 import 'models/language_model.dart';
 import 'package:flutter/material.dart';
 import 'package:hojiakbar_s_app/core/app_export.dart';
-import 'package:hojiakbar_s_app/presentation/root_menu_page/root_menu_page.dart';
+import 'package:hojiakbar_s_app/presentation/root_menu_container_page/root_menu_container_page.dart';
 import 'package:hojiakbar_s_app/widgets/custom_bottom_bar.dart';
 import 'package:hojiakbar_s_app/widgets/custom_radio_button.dart';
 import 'provider/language_provider.dart';
@@ -45,16 +45,16 @@ class LanguageScreenState extends State<LanguageScreen> {
                               Padding(
                                   padding: EdgeInsets.only(left: 26.h),
                                   child: Text("lbl_suggested".tr,
-                                      style:
-                                          CustomTextStyles.titleMediumPoppins)),
+                                      style: CustomTextStyles
+                                          .titleMediumPoppinsBlack90001)),
                               SizedBox(height: 11.v),
                               _buildSuggestedRadioGroup(context),
                               SizedBox(height: 45.v),
                               Padding(
                                   padding: EdgeInsets.only(left: 26.h),
                                   child: Text("lbl_others".tr,
-                                      style:
-                                          CustomTextStyles.titleMediumPoppins)),
+                                      style: CustomTextStyles
+                                          .titleMediumPoppinsBlack90001)),
                               SizedBox(height: 13.v),
                               _buildOthersRadioGroup(context)
                             ])))),
@@ -139,11 +139,11 @@ class LanguageScreenState extends State<LanguageScreen> {
                           padding: EdgeInsets.only(top: 16.v),
                           child: CustomRadioButton(
                               width: 342.h,
-                              text: "lbl_english_uk".tr,
+                              text: "lbl_russian".tr,
                               value:
                                   provider.languageModelObj?.radioList[1] ?? "",
                               groupValue: provider.suggestedRadioGroup,
-                              padding: EdgeInsets.symmetric(vertical: 4.v),
+                              padding: EdgeInsets.symmetric(vertical: 3.v),
                               isRightCheck: true,
                               onChange: (value) {
                                 provider.changeRadioButton1(value);
@@ -229,11 +229,11 @@ class LanguageScreenState extends State<LanguageScreen> {
                           padding: EdgeInsets.only(top: 16.v),
                           child: CustomRadioButton(
                               width: 342.h,
-                              text: "lbl_russian".tr,
+                              text: "lbl_english_uk".tr,
                               value: provider.languageModelObj?.radioList1[5] ??
                                   "",
                               groupValue: provider.othersRadioGroup,
-                              padding: EdgeInsets.symmetric(vertical: 3.v),
+                              padding: EdgeInsets.symmetric(vertical: 2.v),
                               isRightCheck: true,
                               onChange: (value) {
                                 provider.changeRadioButton2(value);
@@ -280,7 +280,7 @@ class LanguageScreenState extends State<LanguageScreen> {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Orange20020x21:
-        return AppRoutes.rootMenuPage;
+        return AppRoutes.rootMenuContainerPage;
       case BottomBarEnum.Vector:
         return "/";
       case BottomBarEnum.Orange200:
@@ -296,8 +296,8 @@ class LanguageScreenState extends State<LanguageScreen> {
     String currentRoute,
   ) {
     switch (currentRoute) {
-      case AppRoutes.rootMenuPage:
-        return RootMenuPage.builder(context);
+      case AppRoutes.rootMenuContainerPage:
+        return RootMenuContainerPage.builder(context);
       default:
         return DefaultWidget();
     }

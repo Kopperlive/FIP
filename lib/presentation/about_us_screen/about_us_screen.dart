@@ -1,7 +1,7 @@
 import 'models/about_us_model.dart';
 import 'package:flutter/material.dart';
 import 'package:hojiakbar_s_app/core/app_export.dart';
-import 'package:hojiakbar_s_app/presentation/root_menu_page/root_menu_page.dart';
+import 'package:hojiakbar_s_app/presentation/root_menu_container_page/root_menu_container_page.dart';
 import 'package:hojiakbar_s_app/widgets/custom_bottom_bar.dart';
 import 'provider/about_us_provider.dart';
 
@@ -32,13 +32,12 @@ class AboutUsScreenState extends State<AboutUsScreen> {
         child: Scaffold(
             body: SizedBox(
                 width: SizeUtils.width,
-                child: SingleChildScrollView(
-                    child: _buildAboutUsSection(context))),
-            bottomNavigationBar: _buildBottomBarSection(context)));
+                child: SingleChildScrollView(child: _buildAboutUs(context))),
+            bottomNavigationBar: _buildBottomBar(context)));
   }
 
   /// Section Widget
-  Widget _buildAboutUsSection(BuildContext context) {
+  Widget _buildAboutUs(BuildContext context) {
     return Padding(
         padding: EdgeInsets.only(bottom: 5.v),
         child: Column(children: [
@@ -93,7 +92,7 @@ class AboutUsScreenState extends State<AboutUsScreen> {
   }
 
   /// Section Widget
-  Widget _buildBottomBarSection(BuildContext context) {
+  Widget _buildBottomBar(BuildContext context) {
     return CustomBottomBar(onChanged: (BottomBarEnum type) {
       Navigator.pushNamed(navigatorKey.currentContext!, getCurrentRoute(type));
     });
@@ -103,7 +102,7 @@ class AboutUsScreenState extends State<AboutUsScreen> {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Orange20020x21:
-        return AppRoutes.rootMenuPage;
+        return AppRoutes.rootMenuContainerPage;
       case BottomBarEnum.Vector:
         return "/";
       case BottomBarEnum.Orange200:
@@ -119,8 +118,8 @@ class AboutUsScreenState extends State<AboutUsScreen> {
     String currentRoute,
   ) {
     switch (currentRoute) {
-      case AppRoutes.rootMenuPage:
-        return RootMenuPage.builder(context);
+      case AppRoutes.rootMenuContainerPage:
+        return RootMenuContainerPage.builder(context);
       default:
         return DefaultWidget();
     }

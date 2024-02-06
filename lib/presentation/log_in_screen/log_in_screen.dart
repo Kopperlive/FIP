@@ -27,7 +27,7 @@ class LogInScreenState extends State<LogInScreen> {
     super.initState();
     Future.delayed(const Duration(milliseconds: 3000), () {
       NavigatorService.popAndPushNamed(
-        AppRoutes.rootMenuContainerScreen,
+        AppRoutes.rootMenuContainer1Screen,
       );
     });
   }
@@ -120,13 +120,13 @@ class LogInScreenState extends State<LogInScreen> {
                                                                             .tr,
                                                                     labelStyle:
                                                                         CustomTextStyles
-                                                                            .bodySmallK2DBlack90001,
+                                                                            .bodySmallBlack90001,
                                                                     hintText:
                                                                         "lbl_email"
                                                                             .tr,
                                                                     hintStyle:
                                                                         CustomTextStyles
-                                                                            .bodySmallK2DBlack90001,
+                                                                            .bodySmallBlack90001,
                                                                     textInputType:
                                                                         TextInputType
                                                                             .emailAddress,
@@ -167,13 +167,13 @@ class LogInScreenState extends State<LogInScreen> {
                                                                             .tr,
                                                                     labelStyle:
                                                                         CustomTextStyles
-                                                                            .bodySmallK2DBlack90001,
+                                                                            .bodySmallBlack90001,
                                                                     hintText:
                                                                         "lbl_password"
                                                                             .tr,
                                                                     hintStyle:
                                                                         CustomTextStyles
-                                                                            .bodySmallK2DBlack90001,
+                                                                            .bodySmallBlack90001,
                                                                     textInputAction:
                                                                         TextInputAction
                                                                             .done,
@@ -227,10 +227,10 @@ class LogInScreenState extends State<LogInScreen> {
                     ])))));
   }
 
-  /// Navigates to the rootMenuContainerScreen when the action is triggered.
+  /// Navigates to the rootMenuContainer1Screen when the action is triggered.
   onTapGO(BuildContext context) {
     NavigatorService.pushNamed(
-      AppRoutes.rootMenuContainerScreen,
+      AppRoutes.rootMenuContainer1Screen,
     );
   }
 }

@@ -2,7 +2,7 @@ import 'models/change_password_model.dart';
 import 'package:flutter/material.dart';
 import 'package:hojiakbar_s_app/core/app_export.dart';
 import 'package:hojiakbar_s_app/core/utils/validation_functions.dart';
-import 'package:hojiakbar_s_app/presentation/root_menu_page/root_menu_page.dart';
+import 'package:hojiakbar_s_app/presentation/root_menu_container_page/root_menu_container_page.dart';
 import 'package:hojiakbar_s_app/widgets/custom_bottom_bar.dart';
 import 'package:hojiakbar_s_app/widgets/custom_floating_text_field.dart';
 import 'provider/change_password_provider.dart';
@@ -181,7 +181,7 @@ class ChangePasswordScreenState extends State<ChangePasswordScreen> {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Orange20020x21:
-        return AppRoutes.rootMenuPage;
+        return AppRoutes.rootMenuContainerPage;
       case BottomBarEnum.Vector:
         return "/";
       case BottomBarEnum.Orange200:
@@ -197,8 +197,8 @@ class ChangePasswordScreenState extends State<ChangePasswordScreen> {
     String currentRoute,
   ) {
     switch (currentRoute) {
-      case AppRoutes.rootMenuPage:
-        return RootMenuPage.builder(context);
+      case AppRoutes.rootMenuContainerPage:
+        return RootMenuContainerPage.builder(context);
       default:
         return DefaultWidget();
     }

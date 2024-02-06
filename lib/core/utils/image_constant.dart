@@ -8,6 +8,17 @@ class ImageConstant {
   // report images
   static String imgHome = '$imagePath/img_home.svg';
 
+  // How to use omnicomm images
+  static String imgRectangle28 = '$imagePath/img_rectangle_28.png';
+
+  static String imgPlayer = '$imagePath/img_player.svg';
+
+  static String imgSticker1 = '$imagePath/img_sticker_1.png';
+
+  static String imgOrange20021x22 = '$imagePath/img__orange_200_21x22.svg';
+
+  static String img20x21 = '$imagePath/img__20x21.svg';
+
   // notifications/chat images
   static String imgSearchBlack900 = '$imagePath/img_search_black_900.svg';
 
@@ -23,6 +34,9 @@ class ImageConstant {
       '$imagePath/img_megaphone_white_a700_01.svg';
 
   static String imgFrame = '$imagePath/img_frame.svg';
+
+  // notifications/chat One images
+  static String imgYellow900 = '$imagePath/img__yellow_900.svg';
 
   // settings images
   static String imgCloseWhiteA70001 = '$imagePath/img_close_white_a700_01.png';
@@ -45,6 +59,34 @@ class ImageConstant {
   // Privacy policy images
   static String imgGray900 = '$imagePath/img__gray_900.png';
 
+  // оверлей images
+  static String imgCloseBlack90001 = '$imagePath/img_close_black_900_01.svg';
+
+  static String imgLock = '$imagePath/img_lock.svg';
+
+  static String imgCheckmark = '$imagePath/img_checkmark.svg';
+
+  static String imgClock = '$imagePath/img_clock.svg';
+
+  static String imgUser = '$imagePath/img_user.svg';
+
+  static String imgSearchBlueGray700 =
+      '$imagePath/img_search_blue_gray_700.svg';
+
+  // оверлей фор акк images
+  static String imgLockBlueGray900 = '$imagePath/img_lock_blue_gray_900.svg';
+
+  static String imgSearchBlueGray900 =
+      '$imagePath/img_search_blue_gray_900.svg';
+
+  static String imgMobile = '$imagePath/img_mobile.svg';
+
+  static String imgUserBlueGray900 = '$imagePath/img_user_blue_gray_900.svg';
+
+  static String imgProfile = '$imagePath/img_profile.svg';
+
+  static String imgLockRed900 = '$imagePath/img_lock_red_900.svg';
+
   // Common images
   static String imgEllipse7 = '$imagePath/img_ellipse_7.png';
 
@@ -60,7 +102,7 @@ class ImageConstant {
 
   static String imgTuda = '$imagePath/img_tuda.svg';
 
-  static String imgSubtract = '$imagePath/img_subtract.svg';
+  static String imgSubtractGray900 = '$imagePath/img_subtract_gray_900.svg';
 
   static String imgOrange200 = '$imagePath/img__orange_200.svg';
 
@@ -68,13 +110,32 @@ class ImageConstant {
 
   static String imgOrange20020x21 = '$imagePath/img__orange_200_20x21.svg';
 
-  static String imgSubtractGray900 = '$imagePath/img_subtract_gray_900.png';
+  static String imgSubtract = '$imagePath/img_subtract.png';
 
   static String imgMegaphone = '$imagePath/img_megaphone.svg';
 
   static String imgSearch = '$imagePath/img_search.svg';
 
   static String imgHomeOrange200 = '$imagePath/img_home_orange_200.svg';
+
+  static String imgArrowLeftBlack900 =
+      '$imagePath/img_arrow_left_black_900.svg';
+
+  static String imgImage = '$imagePath/img_image.png';
+
+  static String imgImage40x40 = '$imagePath/img_image_40x40.png';
+
+  static String imgRectangle = '$imagePath/img_rectangle.png';
+
+  static String imgRectangle100x100 = '$imagePath/img_rectangle_100x100.png';
+
+  static String imgRectangle1 = '$imagePath/img_rectangle_1.png';
+
+  static String imgImage1 = '$imagePath/img_image_1.png';
+
+  static String imgUserYellow900 = '$imagePath/img_user_yellow_900.svg';
+
+  static String imgFrameWhiteA70001 = '$imagePath/img_frame_white_a700_01.svg';
 
   static String imgSearchGray100 = '$imagePath/img_search_gray_100.svg';
 
